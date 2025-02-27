@@ -1,0 +1,247 @@
+@font-face {
+    font-family: "TTLakes";
+    src: url("../fonts/TTLakes-Bold.woff");
+    font-weight: 600;
+    font-style: Bold;
+  }
+  
+  @font-face {
+    font-family: "TTLakes";
+    src: url("../fonts/TTLakes-MediumItalic.woff");
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: "TTLakes";
+    src: url("../fonts/TTLakes-Regular.woff");
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  html {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    padding: 0;
+    font-size: 100%;
+    font-family: "TT Lakes", sans-serif;
+    color: #1B1C21;
+   
+}
+
+.button-circle--cloose:hover{
+    box-shadow: 0 0 5px 0 rgb(173, 10, 10);
+	transform: scale(1.2);
+}
+
+
+
+.button-circle--search:hover{
+    box-shadow: 0 0 5px 0 rgb(173, 10, 10);
+	transform: scale(1.2);
+}
+
+.button-circle{
+    width: 40px;
+    height: 40px;
+    background-color: #ff3e79;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .button-circle--cloose{
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../icon/icon.svg");
+  } 
+
+  .button-circle--search{
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../icon/search.svg");
+  }
+
+
+
+  .aside{ 
+        width: 320px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+        overflow: hidden;
+        box-shadow: 16px 0 52px -10px #0E185033;
+       }
+
+
+
+  .header__mobil {
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+    padding: 18px 24px 0 24px;
+  }
+
+.menu-header{ 
+    display: flex;
+    align-items: center;
+    gap: 16.73px;  
+}
+
+.menu-nav{
+    display: flex;
+    flex-grow: 1;
+    padding-top: 30px;
+    padding-left: 24px;
+}
+
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav__item {
+    position: relative;
+    flex: 1;
+}
+
+.nav__link {
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(27, 28, 33);
+    padding: 16px 0;  
+}
+
+.nav__link--actived {
+    color: rgb(126, 126, 130);
+}
+
+.nav__link:hover{
+    transform: scale(1.2);
+
+}
+
+.nav__link--actived::before {
+    content: "";
+    position: absolute;
+    background: rgb(65, 246, 215);
+    width: 4px;
+    height: 32px;
+    margin-top: -16px;
+    left: -24px;
+    top: 50%;
+    bottom: 50%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transform: rotate(180.00deg);
+}
+
+
+
+
+.menu__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+
+
+.button-circle--call{
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../icon/call.svg");
+
+}
+.button-circle--message{
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../icon/message.svg");
+}
+.button-circle--man{
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../icon/man.svg");
+}
+
+
+.lower__menu{
+    padding-left: 24px;
+    
+}
+
+.burger-menu__mail{
+    font-weight: 400;
+    color:#1B1C21;
+    text-decoration: none;
+}
+
+.burger-menu__telephone {
+    font-size: 24px;
+    font-family: 'TT Lakes', Arial, sans-serif;
+    font-weight: 800;
+    color: #1B1C21;
+    text-decoration: none;
+}
+
+.burger-menu__lang-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-left: 24px;
+   padding-top: 24px;
+   
+}
+
+.burger-menu__lang-link {
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #1B1C21;
+   padding-right: 7px;
+
+}
+
+.button-circle--man:hover,
+.button-circle--message:hover,
+.button-circle--call:hover{
+
+box-shadow: 0 0 5px 0 rgb(173, 10, 10);
+transform: scale(1.2);
+}
+
+
+.burger-menu__lang-link--active  {
+    color: #7E7E82;
+    
+}
+
+.burger-menu__lang-link:hover{
+    box-shadow:  0 0 5px 0 #7E7E82;
+}
